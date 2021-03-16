@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Hello {{name.title()}}!</h1>
+    <h2>I think you are {{gender}}.</h2>
+    <h3>Random Number: {{num}}</h3>
+    {% if gender == "male": %}
+        <h4>{{"Test."}}</h4>
+    {% endif %}
+<a href="{{ url_for('other_page', numb=3) }}">Go to other Page.</a>
+</body>
+<footer>
+    <p>Copyright: {{year}}. Built by Pouya Kholdi.</p>
+</footer>
+</html>
